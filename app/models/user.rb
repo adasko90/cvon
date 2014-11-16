@@ -5,6 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
         validates :name, format: /[A-Z][a-z]*/
-       # validates :role, inclusion: { in: %w(admin user company)}
+        validates :role, inclusion: { in: %w(admin user company)}
         validates :name, :surname, :role, :gender, presence: true
 end
