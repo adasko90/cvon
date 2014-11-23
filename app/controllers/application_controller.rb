@@ -13,9 +13,4 @@ protected
     devise_parameter_sanitizer.for(:sign_up) << :role
     devise_parameter_sanitizer.for(:sign_up) << :telephone
   end
-
-  def go_to_root
-    redirect_to root_path
-  end
-
 end
