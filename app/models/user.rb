@@ -14,4 +14,6 @@ class User < ActiveRecord::Base
         validates :telephone, length: { is: 9 }
 
         validates :name, :surname, :role, :telephone, :gender, presence: true
+
+        has_one :company
 end
