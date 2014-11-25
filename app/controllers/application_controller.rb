@@ -12,5 +12,8 @@ protected
     devise_parameter_sanitizer.for(:sign_up) << :gender
     devise_parameter_sanitizer.for(:sign_up) << :role
     devise_parameter_sanitizer.for(:sign_up) << :telephone
+    devise_parameter_sanitizer.for(:account_update) << :name << :access
+    devise_parameter_sanitizer.for(:account_update) << :surname << :access
+    devise_parameter_sanitizer.for(:account_update) << :telephone << :access
   end
 end
