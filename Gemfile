@@ -32,6 +32,10 @@ gem 'haml'
 
 gem 'rails_admin'
 
+gem 'bootstrap-validator-rails', '~> 0.5.0.2'
+
+gem 'thin'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
