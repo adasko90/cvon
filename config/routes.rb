@@ -4,9 +4,12 @@ Rails.application.routes.draw do
 
   root 'home#index'
 
-  resources :users
+  resources :employees
   resources :companies
-  
+
+  post 'employees/create'
+  post 'companies/create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
