@@ -88,3 +88,41 @@
     bottom: 15px;
     right: 15px;
 }
+
+.indentleft {
+  margin-left:15px;
+}
+.input-group-btn button {
+  width: 80px;
+}
+.indentleft a {
+  color: #ffffff;
+  background: #B40404;
+}
+.indentleft a:hover{
+  color: #ffffff;
+  background: #8A0808;
+}
+.input-group {
+  max-width: 50%;
+}
+body {
+  background: url(Abstract-Business-background.jpg) no-repeat, center, center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.centerer {
+  background: rgba(255,255,255,0.9);
+  margin: 5% auto auto auto;
+  width: 50%;
+  min-width: 600px;
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow:    0px 0px 5px 5px rgba(255, 255, 255, 0.9);
+  box-shadow:         0px 0px 5px 5px rgba(255, 255, 255, 0.9);
+
+}
+.container {
+  max-width:100%;
+}

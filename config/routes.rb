@@ -1,16 +1,27 @@
 Rails.application.routes.draw do
+  devise_for :admins
   mount RailsAdmin::Engine => '/adminpanel', as: 'rails_admin'
   devise_for :users
 
   root 'home#index'
 
-  resources :employees
-  resources :companies
-  resources :jobs
-  resources :cvs
+
+  resources :employees, :companies, :jobs, :cvs, :experiences, :educations, :languages, :skills, :hobbies, :requirements
 
   post 'employees/create'
   post 'companies/create'
+  post 'experiences/create'
+  post 'experiences/update'
+  post 'educations/create'
+  post 'educations/update'
+  post 'languages/create'
+  post 'languages/update'
+  post 'skills/create'
+  post 'skills/update'
+  post 'hobbies/create'
+  post 'hobbies/update'
+  post 'requirements/create'
+  post 'requirements/update'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
